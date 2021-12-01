@@ -1,0 +1,25 @@
+public class Plate {
+    private int food;
+    public Plate(int food){
+        this.food =food;
+    }
+    
+    public void decreaseFood(int n){
+        if(food>=n&&n>0) {
+            food -= n;
+        }else{
+            System.out.println("В тарелке нет столько еды");
+        }
+    }
+
+    public void increaseFood(int x) {
+        if(x>0) {
+            food += x;
+        }else{
+            System.out.println("Нельзя столько добавить");
+        }
+    }
+    public void info() {
+        System.out.format("В тарелке %d грамм\n",food);
+    }
+}
