@@ -1,15 +1,16 @@
 public class Plate {
-    private int food;
+    protected int food;
     public Plate(int food){
         this.food =food;
     }
-    
+
     public void decreaseFood(int n){
         if(food>=n&&n>0) {
             food -= n;
         }else{
             System.out.println("В тарелке нет столько еды");
         }
+
     }
 
     public void increaseFood(int x) {
