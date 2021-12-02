@@ -1,7 +1,7 @@
 public class Cat {
-    private String name;
-    private int appetite;
-    private boolean satiety;
+    protected String name;
+    protected int appetite;
+    protected boolean satiety;
 
     public Cat(String name, int appetite, boolean satiety) {
         this.name = name;
